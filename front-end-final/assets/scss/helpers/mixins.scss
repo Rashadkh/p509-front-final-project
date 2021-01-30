@@ -1,0 +1,10 @@
+@mixin selection {
+  ::selection {
+    @content;
+    text-shadow: none;
+  }
+  ::-moz-selection {
+    @content;
+    text-shadow: none;
+  }
+}
